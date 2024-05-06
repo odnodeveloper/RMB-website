@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="RMB logo">
+            </div>
+            <nav>
+                <ul class = "menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="products.html">Art Pieces</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>THE LAUGHLIN ARTISTS' STORY</h3>
+            <div class="container">
+                <div class="part1">
+                    <img 
+                        src="./images/rmb-photo.jpg" 
+                        alt="People"
+                        class="img-s">
+                    <p class="text">
+                        Rosanne, Marshall, and Bernie Laughlin were born in Pittsville, WI between 1943 and 1952. Several factors (high birth weight, mother's inadequate birth canal, and forceps delivery) resulted in oxygen deprivation causing mental and physical health concerns from birth. Despite these challenges, they grew up in a loving family in their small Central WI town, where their parents instilled values of honesty, kindness, and responsibility.
+                    </p>
+                </div>
+                <div class="part2">
+                    <div class="paragraphs">
+                        <p>In 1999, as their parents aged and needed more assistance, the family made the decision to relocate to the Milwaukee area to be closer to their daughters and receive caregiving support. They settled in Hartland and discovered Marlene Millevolte's Lake Country Fine Arts studio, where they became part of the Adaptive Clay Class.</p>
+                        <p>Under Marlene's guidance and with the help of enthusiastic assistants, they discovered a passion for creating art with clay. Their creativity flourished, resulting in a variety of unique pieces, each infused with their love and joy.</p>
+                    </div>
+                    <img 
+                        src="./images/art-class.jpg" 
+                        alt="Art class"
+                        class="img-s">
+                </div>
+                <div class="part3">
+                    <img src="./images/img.jpg" alt="Art pieces">
+                    <div class="sentences">
+                        <p>Now, these one-of-a-kind creations are ready to find new homes and bring joy to others.</p>
+                        <p>May their creativity bless you all, the way they (RMB) have blessed us!</p>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section id="contact">
+            <h2>Thank you so much for your support!</h2>
+            <img src="./images/art-school.png" alt="Art school" />
+            <div class="contact-info">
+                <div class="address">
+                    <p>A: 112 W Capital Dr, Hartland, WI 53029</p>
+                    <p>T: 262-367-4461</p>
+                    <p>E: wyldmary@yahoo.com</p>
+                </div>
+                <div class="hours">
+                    <p>MON - FRI: 12pm - 4pm</p>
+                    <p>SAT: 11am - 1pm</p>
+                    <p>SUN: 11am - 1pm</p> 
+                </div>
+            </div>
+            <div id="map"></div>
+            <div id="map-overlay" onClick="style.pointerEvents='none'"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Art From Three Heart RMB. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./script.js"></script>    
+</body>
+</html>

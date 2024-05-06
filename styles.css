@@ -1,0 +1,351 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth; /* Enables smooth scrolling from one part to another */
+}
+
+body {
+    background-color: rgb(246, 245, 245);
+    font-family: "Helvetica", sans-serif;
+    word-spacing: 0.05rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.6; /* Provides adequate space between lines */
+    hyphens: auto; /* Enables automatic hyphenation */
+}
+
+h1, h2, h3 {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    padding: 4rem 0 1rem 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem;
+    margin: 0 7rem;
+}
+
+.logo img {
+    height: 11rem;
+    width: 14rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the menu */
+.menu {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing dynamically */
+}
+
+.menu li {
+    display: inline-block; /* lists only stay horizontally */
+    margin-right: 0.1rem;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black; /* Default color for all links */
+    padding: 0.8rem 1rem; /* Increase clickable area, can be adjusted or removed */
+}
+
+/* Style the links on hover and active */
+.menu a:hover, 
+.menu a.active {
+    color: lightgrey; /* hover and active color for the text */
+    background-color: transparent; /* ensuras no background color chnage */  
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    background-color: white;
+    margin: 1rem 5rem;
+}
+
+#hero {
+    height: 70vh; /* Set height to full viewport height */
+    background-image: url('/images/bg_img.jpeg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center;
+    color: #fff;
+    padding: 6.2rem 0;
+    text-align: center;
+    position: relative; /* Ensure the positioning context for absolute children */
+}
+
+.hero-content {
+    max-width: 800px;
+    width: 60%; /* Ensure it doesn't get too wide on smaller screens */ 
+    margin: 0 auto;
+    position: absolute; /* Display the content on the bg image */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* shifts the div back by 50% of its own width and height, effectively centering it */
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.hero-content h1 {
+    color: white;
+    font-size: 4.5rem;
+    margin-bottom: 0.1rem;
+}
+
+.hero-content p {
+    font-size: 2.5rem;
+}
+
+/* Add styles for the button */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: lightgrey;
+}
+
+/* Style the products part of home page */
+#products {
+    background-color: white;
+    width: 100%;
+    padding: 0;
+}
+
+#products .intro {
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+#products .gallery {
+    display: flex;
+    flex-wrap: wrap;        
+    justify-content: space-around;
+    padding: 1.2rem;
+}
+    
+#products .gallery img {
+    flex: 1 1 12.5rem; /* Each image starts at 12.5rem/200px but can grow */
+    margin: 6rem;
+    width: 25%;
+    height: auto;
+    margin: 2rem 1rem;
+    border: 0.1rem solid #ddd; /* Optional border */
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.1); /* Optional shadow */
+}
+
+/* Style the contact page */
+#contact img {
+    display: block;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    margin: 1.8rem;
+}
+
+#contact .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 6rem;
+}
+
+#map {
+    position: relative;
+    width: 90%;
+    height: 25rem; 
+    margin: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Style the about page */
+.container {
+    padding: 1rem 9rem 0 8rem;
+}
+
+.part1, .part2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.text, .paragraphs {
+    width: calc(100% - 32rem); /* Adjust based on max-width of .img and its margin */
+    text-align: justify; /* Aligns text both sides */
+}
+
+.img-s {
+    width: 50%;
+    max-width: 22rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.part3 {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    overflow: hidden; /* Prevents any spilling out */
+}
+
+.img {
+    width: 50%;
+    max-width: 15rem;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;  /* Center the image if `.part3` uses text-align: center */
+}
+
+.sentences {
+    width: 100%;
+    text-align: center; 
+}
+
+/* Style the product page */
+#products {
+    background-color: white;
+    width: 100%;
+    padding: 0;
+}
+
+#products .text {
+    width: 100%;
+    text-align: center;
+}
+
+.art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1.2rem;
+}
+
+.art-gallery img {
+    flex: 1 1 12.5rem; /* Each image starts at 12.5rem/200px but can grow */
+    margin: 8rem;
+    width: 10%;
+    height: auto;
+    margin: 2rem 1rem;
+    border: 0.1rem solid #ddd; /* Optional border */
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.1); /* Optional shadow */
+}
+
+/* style the donate page */
+#donate {
+    text-align: center;
+}
+
+#donate .donate-img {
+    max-width: 100%; /* Restricting image width for the donation box image */
+    display: block; /* Ensures the image is block level */
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 6rem;
+    margin: 0 auto;  /* Center the image if `.part3` uses text-align: center */   
+}
+
+#donate .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 1000px; /* Limit max width to prevent too wide appearance on larger screens */
+    margin: auto; /* Centering it */
+}
+
+#donate .text {
+    flex: 1; /* Takes up all available space */
+    /* width: calc(100% - 32rem);  Adjust based on max-width of .img and its margin */
+    text-align: justify; /* Aligns text both sides */
+    padding-right: 1.2rem;
+}
+
+#donate .img-s {
+    width: auto;
+    max-width: 20rem;
+    height: auto;
+    object-fit: cover;
+}
+
+#donate img.donation-box {
+    width: 90%;
+    max-width: 20rem; /* Restricting image width for the donation box image */ 
+    display: block; /* Ensures the image is block level */
+    height: auto;
+    object-fit: cover;
+    margin: 1.2rem auto;  /* Center the image if `.part3` uses text-align: center */
+}
+
+#donate .text p 
+#donate p {
+    text-align: center;
+}
+
+
+@media (max-width: 876px) {
+    #hero {
+        padding: 3rem 0; /* Reduce padding on smaller screens */
+    }
+    /* Reduce the font size of h1 and p for smaller screens */
+    .hero-content h1 {
+        font-size: 2.5rem; 
+    }
+    .hero-content p {
+        font-size: 1.5rem; 
+    }
+
+    .part1, .part2, .content {
+      flex-direction: column;
+      padding: 1rem; /* Adjust padding for smaller screens */
+    }
+    .img-s,
+    .text,
+    .paragraphs {
+      width: 100%;
+      font-size: 0.8rem;
+      margin-right: 0;
+      margin-bottom: 0.8rem;
+    }
+    .part3 .img {
+        width: 100%; /* Ensures the image scales down to fit its container */
+        max-width: 100%; /* Prevents the image from exceeding the width of its container */
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 0 auto; /* Centers the image if needed */
+    }
+  }
+
+
+
+

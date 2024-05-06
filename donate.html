@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="RMB logo">
+            </div>
+            <nav>
+                <ul class = "menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Art Pieces</a></li>
+                    <li><a href="donate.html" class="active">Donate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="donate">
+            <h2>So, what are we going to do with all these treasures??? <br>
+                THEY HAVE TO BE SHARED!</h2>
+            <img 
+                src="./images/donate.jpg" 
+                alt="Donate" 
+                class="donate-img">
+            <div class="content">
+                <div class="text">
+                    <p>By donating to cover shipping costs, you can support the Lake Country Fine Art Studio's mission and help continue its invaluable work in nurturing artistic talent.</p>
+                    <p>Find further details on the website: https://www.lakecountryfinearts.com/</p>
+                    <p>Any additional donations will go towards enhancing the studio and supporting its community.</p>
+                </div>
+                <img 
+                    src="./images/school-gallery.jpg" 
+                    alt="Art class" 
+                    class="img-s"> 
+            </div>
+            <h2>Donations can be made via cash or check.</h2>
+            <img 
+                src="./images/donation-box.jpg" 
+                alt="Box" 
+                class="donation-box">
+            <p>Now, these one-of-a-kind creations are ready to find new homes and bring joy to others.</p>
+        </section>
+        <section id="contact">
+            <h2>Thank you so much for your support!</h2>
+            <img src="./images/art-school.png" alt="Art school" />
+            <div class="contact-info">
+                <div class="address">
+                    <p>A: 112 W Capital Dr, Hartland, WI 53029</p>
+                    <p>T: 262-367-4461</p>
+                    <p>E: wyldmary@yahoo.com</p>
+                </div>
+                <div class="hours">
+                    <p>MON - FRI: 12pm - 4pm</p>
+                    <p>SAT: 11am - 1pm</p>
+                    <p>SUN: 11am - 1pm</p> 
+                </div>
+            </div>
+            <div id="map"></div>
+            <div id="map-overlay" onClick="style.pointerEvents='none'"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Art From Three Heart RMB. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./script.js"></script>    
+</body>
+</html>

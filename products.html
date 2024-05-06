@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <div class="logo">
+                <img src="./images/logo.png" alt="RMB logo">
+            </div>
+            <nav>
+                <ul class = "menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html" class="active">Art Pieces</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="products">
+            <h2>ART GALLERY</h2>
+            <p class="text">Please scroll through these “one or two of a kind” creations and choose what speaks to you!<br/>
+                Enjoy these unique treasures and share the love!</p>
+            <div class="art-gallery">
+                <img src="./images/art1.jpg" alt="1A Christmas Tree Bernie">
+                <img src="./images/art2.jpg" alt="1B Green Bowl">
+                <img src="./images/art3.jpg" alt="1C Easter Bunny Marshall">
+                <img src="./images/art4.jpg" alt="1D Oval Bowl with Gold Accents">
+                <img src="./images/art5.jpg" alt="1E Snowflake Plate Marshall">
+                <img src="./images/art6.jpg" alt="1F Ornaments Marshall">
+                <img src="./images/art7.jpg" alt="1G Heart Bowl Bernie">
+                <img src="./images/art8.jpg" alt="1H Blue Mug Bernie">
+                <img src="./images/art9.jpg" alt="1I Watermelon Plate Marshall">
+                <img src="./images/art10.jpg" alt="1J Bunny Plate Marshall">
+                <img src="./images/art11.jpg" alt="1K Snail Rosanne">
+                <img src="./images/art12.jpg" alt="1L Leaf Plate">
+                <img src="./images/art13.jpg" alt="1M Small Bowl Marshall">
+                <img src="./images/art14.jpg" alt="1N Median Bowl Rosanne">
+                <img src="./images/art15.jpg" alt="1O Ornaments Car-Bernie Tree-Marshall">
+                <img src="./images/art16.jpg" alt="1P Turkey Marshall">
+                <img src="./images/art17.jpg" alt="1Q Salad Bowl Marshall">
+                <img src="./images/art18.jpg" alt="1R Peacock">
+                <img src="./images/art19.jpg" alt="1S Heart Plate">
+                <img src="./images/art20.jpg" alt="1T Median Bowl Bernie">
+                <img src="./images/art21.jpg" alt="1U Mint Plate Marshall">
+                <img src="./images/art22.jpg" alt="1V Purple Heart Plate Marshall">
+                <img src="./images/art23.jpg" alt="1W Rose on Lief Rosanne">
+                <img src="./images/art24.jpg" alt="1X Angel Bernie">
+                <img src="./images/art25.jpg" alt="1Y Vase / Tall bowl">
+            </div>
+        </div>
+        <section id="contact">
+            <h2>Thank you so much for your support!</h2>
+            <img src="./images/art-school.png" alt="Art school"/>
+            <div class="contact-info">
+                <div class="address">
+                    <p>A: 112 W Capital Dr, Hartland, WI 53029</p>
+                    <p>T: 262-367-4461</p>
+                    <p>E: wyldmary@yahoo.com</p>
+                </div>
+                <div class="hours">
+                    <p>MON - FRI: 12pm - 4pm</p>
+                    <p>SAT: 11am - 1pm</p>
+                    <p>SUN: 11am - 1pm</p> 
+                </div>
+            </div>
+            <div id="map"></div>
+            <div id="map-overlay" onClick="style.pointerEvents='none'"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Art From Three Heart RMB. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./script.js"></script> 
+</body>
+</html>
