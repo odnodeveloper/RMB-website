@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-    if (window.location.href.includes('home.html') || window.location.pathname === '/') {
+    if (window.location.href.includes('index.html') || window.location.pathname === '/') {
         // Only for the homepage, shuffle and show 8 images
         const shuffledImages = images.sort(() => 0.5 - Math.random());
         const selectedImages = shuffledImages.slice(0, 6);
