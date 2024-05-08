@@ -222,7 +222,6 @@ main {
     max-width: 15rem;
     height: auto;
     object-fit: cover;
-    margin: 0 auto;  /* Center the image if `.part3` uses text-align: center */
 }
 
 .sentences {
