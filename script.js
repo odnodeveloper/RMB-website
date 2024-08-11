@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
         'images/art19.jpg', 'images/art20.jpg',
         'images/art21.jpg', 'images/art22.jpg',
         'images/art23.jpg', 'images/art24.jpg',
-        'images/art25.jpg',
     ];
 
     function displayImages(imageArray) {
