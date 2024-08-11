@@ -87,7 +87,7 @@ main {
 
 #hero {
     height: 70vh; /* Set height to full viewport height */
-    background-image: url('/images/bg_img.jpeg');
+    background-image: url('images/bg_img.jpeg');
     background-size: cover; /* Cover the entire container */
     background-position: center;
     color: #fff;
